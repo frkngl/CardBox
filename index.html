@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furkan Gül </title>
+    
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            margin-top: 150px;
+        }
+        .box{
+            display: inline-block;
+            border-radius: 20px;
+        }
+        .box .text{ 
+            position: relative;
+            font-size: 1.25rem;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: transparent;
+            width:640px;
+            height:auto;
+            margin-top: -100px;
+            background: transparent;
+            text-align: center;
+            transition: all 700ms;
+        }
+        .box .img{
+            display:inline-block;
+            border-radius: 20px;
+        }
+        .box .img img{
+            border-radius: 20px;
+        }
+        .box:hover :is(.text){
+            position: absolute;
+            color: white;
+            margin-top: -250px;
+            background: rgb(255, 255, 255, 0.3);
+            backdrop-filter: blur(15px);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="img">
+            <img src="Project.png" alt="">
+        </div>
+        <div class="text">
+            <h1 style="margin: -5px 0px">Başlık</h1>
+            <p style="margin-bottom: 0px;"> HTML CSS JAVASCRİPT REACT.JS SQL BOOTSTRAP</p>
+        </div>
+    </div>
+</body>
+</html>
